@@ -58,6 +58,7 @@ public class JacksonUsage {
             e.printStackTrace();
         }
 
+        // map转化为json
         Map<String, Object> userMap = Maps.newHashMap();
         userMap.put("int", 1);
         userMap.put("string", "string");

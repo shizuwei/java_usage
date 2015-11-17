@@ -28,7 +28,7 @@ public class HttpClientUsage {
     private static final Logger log = LoggerFactory.getLogger(HttpClientUsage.class);
 
     public void test1(String url) throws Exception {
-        // defaut httpclient
+        // default httpclient
         CloseableHttpClient httpClient = HttpClients.createDefault();
         HttpPost httpPost = new HttpPost(url);
         try {

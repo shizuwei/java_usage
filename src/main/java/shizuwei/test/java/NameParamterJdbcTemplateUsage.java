@@ -114,7 +114,7 @@ public class NameParamterJdbcTemplateUsage {
         });
 
         // test2 只针对row 不用调用next()
-        List<User> users = Lists.newArrayList();
+        final List<User> users = Lists.newArrayList();
         namedParameterJdbcTemplate.query(sql, new RowCallbackHandler() {
             @Override
             public void processRow(ResultSet rs) throws SQLException {
